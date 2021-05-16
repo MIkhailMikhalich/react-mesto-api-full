@@ -1,0 +1,17 @@
+.button_sign-up {
+  width: 114px;
+  height: 22px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 6px 0 46px auto;
+}
+@media screen and (max-width: 425px)
+{
+  .button_sign-up
+  {
+    margin: 34px 30px 33px 0;
+  }
+}

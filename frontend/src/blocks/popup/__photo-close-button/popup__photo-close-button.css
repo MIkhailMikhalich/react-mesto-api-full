@@ -1,0 +1,14 @@
+.popup__photo-close-button
+{
+  position: absolute;
+  top: -50px;
+  right: 0px;
+
+}
+ @media screen and (max-width:425px)
+ {
+   .popup__photo-close-button
+   {
+     top: -30px;
+   }
+ }

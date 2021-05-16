@@ -1,0 +1,26 @@
+.popup__input
+{
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: inherit;
+  height: inherit;
+  min-height: 27px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.popup__input:active,
+.popup__input:hover,
+.popup__input:focus {
+outline: none;
+}
+
+.popup__input::placeholder {
+  transition: 0.5s;
+  color: #aaa;
+}
+.popup__input:focus::placeholder {
+  font-size: 10px;
+  transform: translateY(-10px);
+}
+

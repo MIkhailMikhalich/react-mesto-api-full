@@ -1,0 +1,16 @@
+.photocards__photo
+{
+  max-width: inherit;
+  height: 282px;
+  object-fit: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.photocards__photo::before
+{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}

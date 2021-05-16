@@ -1,0 +1,36 @@
+.popup__window
+{
+  position: relative;
+  max-width: 430px;
+
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media screen and (max-width: 960px)
+{
+  .popup__window
+  {
+    max-width: 60%;
+  }
+}
+@media screen and (max-width: 768px)
+{
+  .popup__window
+  {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 550px)
+{
+  .popup__window
+  {
+    min-height: 322px;
+    max-width: 90%;
+  }
+}

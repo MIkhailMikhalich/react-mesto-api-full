@@ -1,0 +1,9 @@
+.photocards__name-like-area
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 15px 31px 21px;
+
+}
+

@@ -1,0 +1,30 @@
+.button_close
+{
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 100%;
+  top: -12%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transition: unset;
+}
+
+
+@media screen and (max-width: 550px)
+{
+  .button_close
+  {
+    left: 93%;
+    top: -9%;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 375px)
+{
+  .button_close
+  {
+    left: 91%;
+  }
+}

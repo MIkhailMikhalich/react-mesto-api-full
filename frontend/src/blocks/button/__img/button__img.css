@@ -1,0 +1,14 @@
+.button__img
+{
+  width: 24px;
+  height: 24px;
+}
+@media screen and (max-width: 425px)
+
+{
+  .button__img
+  {
+    width: 18px;
+    height: 18px;
+  }
+}

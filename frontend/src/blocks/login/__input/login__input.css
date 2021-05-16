@@ -1,0 +1,34 @@
+.login__input {
+  text-align: left;
+  color: #cccc;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 30px;
+  width: inherit;
+  min-height: 27px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: black;
+
+}
+
+.login__input:active,
+.login__input:hover,
+.login__input:focus {
+outline: none;
+}
+
+.login__input::placeholder {
+  transition: 0.5s;
+  color: #aaa;
+}
+.login__input:focus::placeholder {
+  font-size: 10px;
+  transform: translateY(-10px);
+}

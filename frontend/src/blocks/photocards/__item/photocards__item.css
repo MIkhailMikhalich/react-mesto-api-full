@@ -1,0 +1,10 @@
+.photocards__item
+{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 282px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}

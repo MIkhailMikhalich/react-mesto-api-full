@@ -1,0 +1,10 @@
+.register__button-to-login {
+  width: inherit;
+  height: 17px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 15px 0 80px auto;
+}

@@ -1,0 +1,35 @@
+
+.photocards
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 18px;
+  row-gap: 20px;
+  margin: 50px auto 0 auto;
+  max-width: 880px;
+}
+
+
+@media screen and (max-width: 960px)
+{
+  .photocards
+  {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width: 768px)
+{
+  .photocards
+  {
+    margin: 50px 100px 0 100px;
+  }
+}
+@media screen and (max-width: 750px)
+{
+  .photocards
+  {
+    grid-template-columns: 282px;
+    margin: 36px auto 48px auto;
+    max-width: 282px;
+  }
+}

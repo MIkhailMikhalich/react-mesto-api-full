@@ -1,0 +1,13 @@
+.photocards__delete-button
+{
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  opacity: 0;
+}
+.photocards__delete-button:hover
+{
+  opacity: 0;
+}

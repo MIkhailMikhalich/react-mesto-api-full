@@ -1,0 +1,11 @@
+.popup__overlay
+{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+.popup__overlay:hover
+{
+  opacity: 1;
+  cursor: default;
+}

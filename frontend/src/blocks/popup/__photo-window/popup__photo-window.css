@@ -1,0 +1,11 @@
+.popup__photo-window
+{
+  position: relative;
+  max-width: 75vw;
+  max-height: 75vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+

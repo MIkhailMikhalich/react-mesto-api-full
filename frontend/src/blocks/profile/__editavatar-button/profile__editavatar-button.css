@@ -1,0 +1,16 @@
+.profile__editavatar-button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 80px;
+  right: 30px;
+  z-index: 0;
+
+}
+.profile__editavatar-button:hover
+{
+  opacity: 1;
+}

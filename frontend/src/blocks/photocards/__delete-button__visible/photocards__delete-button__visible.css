@@ -1,0 +1,8 @@
+.photocards__delete-button__visible
+{
+  opacity: 1;
+}
+.photocards__delete-button__visible:hover
+{
+  opacity: 0.8;
+}
