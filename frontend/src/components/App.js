@@ -36,20 +36,21 @@ function App() {
 
   React.useEffect(() => {
     tokenCheck();
-    if(isLoggedIn){
-    api
-      .getProfile()
-      .then((data) => {
-        setCurrentUser(data.data);
-      })
-      .catch((err) => console.log(err));
-    api
-      .getInitialCards()
-      .then((data) => {
-        setCards(data);
-      })
-      .catch((err) => console.log(err));}
-
+    if (isLoggedIn) {
+      let jwt = localStorage.getItem('jwt');
+      auth
+        .getContent(jwt)
+        .then((data) => {
+          setCurrentUser(data.data);
+        })
+        .catch((err) => console.log(err));
+      api
+        .getInitialCards()
+        .then((data) => {
+          setCards(data);
+        })
+        .catch((err) => console.log(err));
+    }
   }, [isLoggedIn]);
 
   function handleEditAvatarClick() {

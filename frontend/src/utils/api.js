@@ -6,7 +6,10 @@ class Api {
   getInitialCards() {
     return fetch(`${this._url}cards`, {
       method: 'GET',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
     }).then((res) => {
       if (res.ok) {
@@ -20,7 +23,10 @@ class Api {
   getProfile() {
     return fetch(`${this._url}users/me`, {
       method: 'GET',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
     }).then((res) => {
       if (res.ok) {
@@ -34,7 +40,10 @@ class Api {
   setProfileData(name, info) {
     return fetch(`${this._url}users/me`, {
       method: 'PATCH',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
       body: JSON.stringify({
         name: name,
@@ -52,7 +61,10 @@ class Api {
   setProfileAvatar(src) {
     return fetch(`${this._url}users/me/avatar`, {
       method: 'PATCH',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
       body: JSON.stringify({
         avatar: src,
@@ -69,7 +81,10 @@ class Api {
   postCard(data) {
     return fetch(`${this._url}cards`, {
       method: 'POST',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
 
       body: JSON.stringify({
@@ -88,7 +103,10 @@ class Api {
   deleteCard(cardID) {
     return fetch(`${this._url}cards/${cardID}`, {
       method: 'DELETE',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
     }).then((res) => {
       if (res.ok) {
@@ -102,7 +120,10 @@ class Api {
   putLike(cardID) {
     return fetch(`${this._url}cards/${cardID}/likes`, {
       method: 'PUT',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
     }).then((res) => {
       if (res.ok) {
@@ -116,7 +137,10 @@ class Api {
   unPutLike(cardID) {
     return fetch(`${this._url}cards/${cardID}/likes`, {
       method: 'DELETE',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
     }).then((res) => {
       if (res.ok) {
@@ -129,7 +153,10 @@ class Api {
   changeLikeCardStatus(card, isLiked) {
     return fetch(`${this._url}cards/${card}/likes`, {
       method: isLiked ? 'PUT' : 'DELETE',
-      headers: this._headers,
+      headers:  {
+        Authorization: `${localStorage.getItem('jwt')}`,
+        'Content-Type': 'application/json',
+      },
       'credentials': 'include',
     }).then((res) => {
       if (res.ok) {
