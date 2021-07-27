@@ -14,3 +14,7 @@ https://medved.students.nomoredomains.rocks публичная ссылка.
 - ExpressJS
 - HTML
 - CSS
+## Инструкция по запуску
+1. После установки репозитория на ПК открыть каждую папку через VisualStudioCode и написать в терминале npm instsall и дождаться установки всех необходимых файлов
+2. Запустить backend при помощи команды npm run start
+3. Запустить frontend при помощи команды npm run dev 
