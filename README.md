@@ -9,9 +9,9 @@ https://medved.students.nomoredomains.rocks публичная ссылка.
 ## Технологии:
 - JS
 - MongoDB
-- ReactJS
-- NodeJS
-- ExpressJS
+- React
+- Node
+- Express
 - HTML
 - CSS
 ## Инструкция по развертыванию
